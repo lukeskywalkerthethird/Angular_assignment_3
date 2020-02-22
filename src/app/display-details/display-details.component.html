@@ -1,0 +1,13 @@
+<button class="btn btn-primary"
+        (click)="changeVisibility()"
+>Display Details </button>
+<hr>
+<p  *ngIf="paragraphStateVisible"
+    class="test-primary"
+>I am just a simple paragraph</p>
+<p  class="test-primary"
+    [ngStyle] = "{backgroundColor: color}"
+    [ngClass] = "{textColor: counter >= 5}"
+    *ngFor="let time of buttonClickedLog"
+>{{ time }}</p>
+
